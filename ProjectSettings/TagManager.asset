@@ -12,6 +12,7 @@ TagManager:
   - GameOver
   - SC
   - wall
+  - SC2
   layers:
   - Default
   - TransparentFX

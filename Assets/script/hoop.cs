@@ -12,7 +12,7 @@ public class hoop : MonoBehaviour
 	// Start is called before the first frame update
 	void Start()
     {
-        float x = Random.Range(-2.0f, 2.0f);
+        float x = Random.Range(-2.5f, 1.5f);
         float y = Random.Range(-6.0f, -6.1f);
 
         transform.position = new Vector3(x, y, 0);

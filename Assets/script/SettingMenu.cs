@@ -7,10 +7,16 @@ public class SettingMenu : MonoBehaviour
 {
 
     public AudioMixer audioMixer;
+    //public GameManager pushFor
 
     public void SetVolume(float volume)
     {
         audioMixer.SetFloat("volume",volume); 
+    }
+
+    public void Setforce(int force)
+    {
+
     }
 
 }

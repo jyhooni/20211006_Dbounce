@@ -55,7 +55,7 @@ public class GameManager : MonoBehaviour
 
 
 	public Trajectory trajectory;
-	[SerializeField] float pushForce = 4f;
+	[SerializeField] float pushForce = 8f;
 
 	bool isDragging = false;
 
@@ -163,7 +163,7 @@ public class GameManager : MonoBehaviour
 
 			
 			newHoop.transform.Find("hoop1").gameObject.SetActive(true);
-			newHoop.transform.Find("hoop1_1").gameObject.SetActive(true);
+			newHoop.transform.Find("hoop1_1").gameObject.SetActive(false);
 			//GameObject.FindGameObjectWithTag("hoop1").SetActive(true);
 			//GameObject.FindGameObjectWithTag("hoop1_1").SetActive(false);
 			//hoop.gameObject.GetComponent<SpriteRenderer>().sortingOrder = 1;
@@ -197,8 +197,8 @@ public class GameManager : MonoBehaviour
 
 			//GameObject.Find("hoop").transform.Find("hoop1").gameObject.SetActive(true);
 			//GameObject.Find("hoop").transform.Find("hoop1_1").gameObject.SetActive(false);
-			newHoop.transform.Find("hoop1").gameObject.SetActive(true);
-			newHoop.transform.Find("hoop1_1").gameObject.SetActive(false);
+			//newHoop.transform.Find("hoop1").gameObject.SetActive(true);
+			//newHoop.transform.Find("hoop1_1").gameObject.SetActive(false);
 		}
 		if (GameObject.Find("Ball").GetComponent<Ball>().Coin > 3)
 		{
@@ -209,8 +209,8 @@ public class GameManager : MonoBehaviour
 
 			//GameObject.Find("hoop").transform.Find("hoop1").gameObject.SetActive(false);
 			//GameObject.Find("hoop").transform.Find("hoop1_1").gameObject.SetActive(true);
-			newHoop.transform.Find("hoop1").gameObject.SetActive(true);
-			newHoop.transform.Find("hoop1_1").gameObject.SetActive(false);
+			//newHoop.transform.Find("hoop1").gameObject.SetActive(true);
+			//newHoop.transform.Find("hoop1_1").gameObject.SetActive(false);
 		}
 
 
