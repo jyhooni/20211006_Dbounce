@@ -13,15 +13,15 @@ public class panel_sc3 : MonoBehaviour
     void Start()
 
     {
-        HStext.text = "HIGHSCORE:" + PlayerPrefs.GetInt("HighScore");
-        HCtext.text = "HIGHCOIN:" + PlayerPrefs.GetInt("HighCoin");
+        
 
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+        HStext.text = "BEST:" + PlayerPrefs.GetInt("HighScore");
+        HCtext.text = "" + PlayerPrefs.GetInt("HighCoin");
     }
 
     public void retry()

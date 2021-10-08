@@ -9,7 +9,7 @@ public class Ball : MonoBehaviour
 	Camera Camera;
 
 	coin coinsManager;
-	public int Coin = 0;
+	public int Coin;
 	public int ScoreCount = 0;
 	
 
@@ -99,12 +99,12 @@ public class Ball : MonoBehaviour
 			Coin++;
 			textCoins.text = "Coin :" + Coin.ToString();
 
-			if (Coin > hiCoinCount)
-			{
-				hiCoinCount = Coin;
-				PlayerPrefs.SetInt("HighCoin", hiCoinCount);
-			}
-			highCoinText.text = "High Coin:" + hiCoinCount;
+			//if (Coin > hiCoinCount)
+			//	{
+			hiCoinCount ++;
+			PlayerPrefs.SetInt("HighCoin", hiCoinCount);
+			//}
+			//highCoinText.text = "High Coin:" + hiCoinCount;
 
 
 			Destroy(other.gameObject);
@@ -117,14 +117,14 @@ public class Ball : MonoBehaviour
 			//ScoreCount++;
 			ScoreCount += 2;
 			
-			textScoreCounts.text = "Score : " + ScoreCount.ToString();
+			textScoreCounts.text = "" + ScoreCount.ToString();
 			
 			if(ScoreCount > hiScoreCount)
             {
 				hiScoreCount = ScoreCount;
 				PlayerPrefs.SetInt("HighScore", hiScoreCount);
             }
-			highScoreText.text = "High Score:" + hiScoreCount;
+			highScoreText.text = "BEST" + hiScoreCount;
 
 
 
